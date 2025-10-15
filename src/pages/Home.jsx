@@ -5,7 +5,8 @@ import SkillsSection from "../components/SkillsSection";
 import OtherSkillsSection from "../components/OtherSkillsSection";
 import WorkExperience from "../components/WorkExperience";
 import Footer from "../components/Footer";
-
+import Education from "../components/Education";
+import Projects from "../components/Projects";
 export default function Home() {
     return <div className="min-h-screen items-center justify-center align-middle padding-top-10">
         
@@ -39,10 +40,24 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="experience" className="section-pad">
+        <section id="experience" className="section-pad mt-0">
             <div className="mx-auto max-w-6xl px-6">
                 <h2 className="text-3xl font-semibold text-center mb-6 align-left">Experience</h2>
                 <WorkExperience />
+            </div>
+        </section>
+
+        <section id="education" className="section-pad mt-0">
+            <div className="mx-auto max-w-6xl px-6">
+                <h2 className="text-3xl font-semibold text-center mb-6 align-left">Education</h2>
+                <Education />
+            </div>
+        </section>
+
+        <section id="projects" className="section-pad mt-0">
+            <div className="mx-auto max-w-6xl px-6">
+                <h2 className="text-3xl font-semibold text-center mb-6 align-left">Projects</h2>
+                <Projects />
             </div>
         </section>
 
