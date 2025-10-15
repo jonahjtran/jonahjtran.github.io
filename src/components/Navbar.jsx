@@ -1,12 +1,14 @@
 const navItems = [
-    {name: "Home", href: "#home"},
-    {name: "Professional", href: "#professional"},
-    {name: "Experience", href: "#experience"},
-    {name: "Education", href: "#education"},
-    {name: "Projects", href: "#projects"},
-    {name: "Blog", href: "#blog"},
-    {name: "Contact", href: "#contact"},
+    {name: "Home", href: "/#home"},
+    {name: "Professional", href: "/#professional"},
+    {name: "Experience", href: "/#experience"},
+    {name: "Education", href: "/#education"},
+    {name: "Projects", href: "/#projects"},
+    {name: "Blog", href: "/#blog"},
+    {name: "Contact", href: "/#contact"},
 ];
+
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const linkBase = "px-3 py-2 text-lg font-medium text-white transition-colors";
@@ -23,9 +25,9 @@ export default function Navbar() {
                 <ul className="flex items-center gap-1 text-white ">
                     {navItems.map(({name, href}) => (
                         <li key={name} className="flex-shrink-0 texxt-white">
-                            <a href={href} className={`${linkBase} hover:text-blue-600`}>
+                            <Link to={href} className={`${linkBase} hover:text-blue-600`}>
                                 {name}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
