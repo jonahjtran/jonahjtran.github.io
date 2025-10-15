@@ -1,3 +1,14 @@
+## Deploying to GitHub Pages
+
+This project is pre-configured to deploy to GitHub Pages via GitHub Actions.
+
+Steps:
+1. Push to the `main` branch.
+2. In GitHub, go to Settings → Pages and set Source to "GitHub Actions".
+3. The workflow builds the site and publishes the `dist/` folder to Pages. SPA fallback is handled by copying `index.html` to `404.html`.
+
+Vite base path is set automatically for project pages using the repository name.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
