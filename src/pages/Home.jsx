@@ -37,12 +37,24 @@ export default function Home() {
             </div>
         </section>
 
+        <section id="experience" className="section-pad">
+            <div className="mx-auto max-w-6xl px-6">
+                <h2 className="text-3xl font-semibold text-center mb-6">Experience</h2>
+                <div className=" text-white px-8 pt-16 pb-6">
+                    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="blog" className="section-pad">
             <div className="mx-auto max-w-6xl px-6">
                 <h2 className="text-3xl font-semibold text-center mb-6">Blog</h2>
                 <p className="text-center text-lg text-white/80">Thoughts on software, learning, and projects.</p>
             </div>
         </section>
+
         {/* Footer */}
     </div>
 }
