@@ -9,7 +9,7 @@ import ScrollToHash from "./components/ScrollToHash";
 function App() {
 
   return (
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Navbar/>
         <main className="pt-16">
           <ScrollToHash />

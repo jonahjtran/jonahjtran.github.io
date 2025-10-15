@@ -1,11 +1,12 @@
+const base = import.meta.env.BASE_URL || "/";
 const navItems = [
-    {name: "Home", href: "/#home"},
-    {name: "Professional", href: "/#professional"},
-    {name: "Experience", href: "/#experience"},
-    {name: "Education", href: "/#education"},
-    {name: "Projects", href: "/#projects"},
-    {name: "Blog", href: "/#blog"},
-    {name: "Contact", href: "/#contact"},
+    {name: "Home", href: `${base}#home`},
+    {name: "Professional", href: `${base}#professional`},
+    {name: "Experience", href: `${base}#experience`},
+    {name: "Education", href: `${base}#education`},
+    {name: "Projects", href: `${base}#projects`},
+    {name: "Blog", href: `${base}#blog`},
+    {name: "Contact", href: `${base}#contact`},
 ];
 
 import { Link } from "react-router-dom";
