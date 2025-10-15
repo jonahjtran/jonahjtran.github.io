@@ -3,6 +3,7 @@ import headshot from "../assets/headshot.JPEG";
 import ProfileSection from "../components/ProfileSection";
 import SkillsSection from "../components/SkillsSection";
 import OtherSkillsSection from "../components/OtherSkillsSection";
+import WorkExperience from "../components/WorkExperience";
 
 export default function Home() {
     return <div className="min-h-screen items-center justify-center align-middle padding-top-10">
@@ -39,12 +40,8 @@ export default function Home() {
 
         <section id="experience" className="section-pad">
             <div className="mx-auto max-w-6xl px-6">
-                <h2 className="text-3xl font-semibold text-center mb-6">Experience</h2>
-                <div className=" text-white px-8 pt-16 pb-6">
-                    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-                        
-                    </div>
-                </div>
+                <h2 className="text-3xl font-semibold text-center mb-6 align-left">Experience</h2>
+                <WorkExperience />
             </div>
         </section>
 
