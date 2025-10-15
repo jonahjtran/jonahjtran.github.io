@@ -1,5 +1,8 @@
 //import Navbar from "../components/Navbar"
 import headshot from "../assets/headshot.JPEG";
+import ProfileSection from "../components/ProfileSection";
+import SkillsSection from "../components/SkillsSection";
+import OtherSkillsSection from "../components/OtherSkillsSection";
 
 export default function Home() {
     return <div className="min-h-screen items-center justify-center align-middle padding-top-10">
@@ -20,10 +23,17 @@ export default function Home() {
         <section id="professional" className="section-pad">
             <div className="mx-auto max-w-6xl px-6">
                 <h2 className="text-3xl font-semibold text-center mb-6">Professional</h2>
-                <p className="text-center text-lg text-white/80">Here is my resume and professional experience.</p>
-                <div className="">
-
+                <div className=" text-white px-8 pt-16 pb-6">
+                    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+                        <ProfileSection />
+                        <SkillsSection />
+                    </div>
                 </div>
+                <div className="px-6">
+                    <h3 className="text-2xl font-semibold text-center mb-4">Other Notable Skills</h3>
+                    <OtherSkillsSection />
+                </div>
+                
             </div>
         </section>
 
