@@ -1,25 +1,25 @@
 export default function Projects() {
     const projects = [
         {
-            title: "Pomodoro Study Suite",
+            title: "Basketball Stats Tracker",
             description:
-                "Full-stack study tool with timers, planners, and music integration.",
-            tags: ["React", "Node", "Postgres"],
-            links: [{ label: "GitHub", href: "#" }],
+                "A web application that allows users to track their basketball stats and analyze their performance. While tracking a users stats, various heatmaps can be generated from data related to games, seasons, or specific players.",
+            tags: ["React", "Python", "Django", "Postgres", "REST API", "Matplotlib"],
+            links: [{ label: "GitHub", href: "https://github.com/jonahjtran/Basketball-Stat-Tracker" }],
         },
         {
-            title: "Web Scraper for Outreach",
+            title: "AI Financial Planning App",
             description:
-                "Automated RSO contact scraping to accelerate marketing outreach.",
-            tags: ["Python", "Requests", "BeautifulSoup"],
-            links: [{ label: "GitHub", href: "#" }],
+                "I collaborated with in a team of 4 to create an AI-driven financial planner prototype in a 36 hour hackathon. We leveraged React for a modernized UI, while also integrating OAuth authenification for google authentificationa and connectiveity. Furthermore, we utilized Gemini's API to give AI-driven financial advice realted to a user's longterm goal. These insights were backed by financial bank data from Capital One's Nessi API, which were displayed to users using D3.js based visualizations to display spending patterns.",
+            tags: ["Javascipt", "React", "D3.js", "Gemini API", "Capital One's Nessi API", "OAuth"],
+            links: [{ label: "GitHub", href: "https://github.com/jonahjtran/Ekewaka" }],
         },
         {
-            title: "AI Matching System",
+            title: "Element Combination Drag and Drop Game",
             description:
-                "Prototype service to match nonprofits with artists for events.",
-            tags: ["Python", "ML", "Vector Search"],
-            links: [{ label: "GitHub", href: "#" }],
+                "Created a drag and drop game that allows users to combine elements to create new elements. This was a group project with 3 other students. Utilizing React and supabase for the frontend and database respectively, we were able to create a competitive multiplayergame mode that allowed users accross multiple devices to race to create a certain object. Integrating Gemini's API, we were also able to give users the ability to create new elements by combining elements that didn't have a set result upon combination.",
+            tags: ["Javascript", "React", "Supabase", "Gemini API"],
+            links: [{ label: "GitHub", href: "https://github.com/jonahjtran/Elemental-Clash" }],
         },
     ];
 
@@ -37,7 +37,7 @@ export default function Projects() {
                     {proj.links?.length ? (
                         <div className="mt-4 flex gap-4">
                             {proj.links.map((l) => (
-                                <a
+                                <a target="_blank" rel="noopener noreferrer"
                                     key={l.label}
                                     href={l.href}
                                     className="text-sm font-medium text-blue-400 hover:text-blue-300"
