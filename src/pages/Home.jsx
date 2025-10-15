@@ -1,7 +1,8 @@
-export default function Home() {
+//import Navbar from "../components/Navbar"
 
+export default function Home() {
     return <div className="min-h-screen ">
-        Home
+        
         {/* Theme Toggle */}
 
         {/* Background Effects */}
@@ -9,7 +10,7 @@ export default function Home() {
         {/* Navbar */}
 
         {/* Main Content */}
-
+        home page
         {/* Footer */}
     </div>
 }
