@@ -3,27 +3,25 @@ import synchrony from "../assets/synchrony.png";
 
 export default function WorkExperience() {
     const work = [
-        {title: "Mobile Development Intern", date: "January 2026", company: "Synchrony Financial", image: synchrony, description: "test"},
+        {title: "Mobile Development Intern", date: "January 2026", company: "Synchrony Financial", image: synchrony, description: "Working as a mobile development intern at Synchrony's Emerging Technology Center at Reseearch Park. "},
 
-        {title: "Software Engineer Intern", date: "May 2025-August 2025", company: "MeaVana", image: meavana, description:"test"},
+        {title: "Software Engineer Intern", date: "May 2025-August 2025", company: "MeaVana", image: meavana, description:"I worked as a full-stack developer, creating different study tools for the MeaVana platform. Notably, I created a pomodoro timer that integrated multiple tools and features such as integrated planners, music playesr, and timer settings to create an all in one study platform for students. I also created marketing technology, such as webscrapers to automate UIUC RSO contact retrieval, whihc sped up our outreach by near 45%. "},
     ]
 
     return (
         <div className="relative w-full">
-            {/* left-aligned timeline; per-item line rendered in center column */}
-
-            <ul className="space-y-10 md:space-y-14">
+            {/* left-aligned timeline; per-item connectors rendered in center column */}
+            <ul className="space-y-0">
                 {work.map((item, index) => (
-                    <li key={index} className="grid grid-cols-1 md:grid-cols-[minmax(12rem,1fr)_64px_2fr] items-start gap-6">
+                    <li key={index} className="grid grid-cols-1 md:grid-cols-[minmax(12rem,1fr)_64px_2fr] items-stretch gap-6 py-6 md:py-8">
                         {/* Left: title and date */}
                         <div className="md:text-right md:pr-6">
                             <h3 className="text-xl font-semibold text-white">{item.title}</h3>
                             <span className="text-sm text-white/60">{item.date}</span>
                         </div>
 
-                        {/* Center: logo on the timeline */}
-                        <div className="relative flex items-center justify-center">
-                            <span className="pointer-events-none absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-white/15" aria-hidden="true" />
+                        {/* Center: logo on the timeline with connectors */}
+                        <div className="relative self-stretch flex items-center justify-center">
                             <span className="z-10 flex h-12 w-12 items-center justify-center overflow-hidden rounded-full ring-2 ring-white/25 bg-white">
                                 <img src={item.image} alt={`${item.company} logo`} className="h-full w-full object-contain p-1" />
                             </span>

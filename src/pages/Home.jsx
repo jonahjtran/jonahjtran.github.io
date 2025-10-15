@@ -4,6 +4,7 @@ import ProfileSection from "../components/ProfileSection";
 import SkillsSection from "../components/SkillsSection";
 import OtherSkillsSection from "../components/OtherSkillsSection";
 import WorkExperience from "../components/WorkExperience";
+import Footer from "../components/Footer";
 
 export default function Home() {
     return <div className="min-h-screen items-center justify-center align-middle padding-top-10">
@@ -50,6 +51,10 @@ export default function Home() {
                 <h2 className="text-3xl font-semibold text-center mb-6">Blog</h2>
                 <p className="text-center text-lg text-white/80">Thoughts on software, learning, and projects.</p>
             </div>
+        </section>
+
+        <section id="contact" className="section-pad">
+        <Footer/>
         </section>
 
         {/* Footer */}

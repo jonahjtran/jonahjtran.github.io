@@ -10,7 +10,7 @@ function App() {
         <main className="pt-16">
           <Home />
         </main>
-        <Footer/>
+        
       </>
   );
 }

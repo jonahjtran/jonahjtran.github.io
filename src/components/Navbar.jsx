@@ -1,7 +1,8 @@
 const navItems = [
     {name: "Home", href: "#home"},
     {name: "Professional", href: "#professional"},
-    {name: "Blog", href: "#blog"}
+    {name: "Blog", href: "#blog"},
+    {name: "Contact", href: "#contact"},
 ];
 
 export default function Navbar() {
