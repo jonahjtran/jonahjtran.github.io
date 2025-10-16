@@ -4,7 +4,7 @@ export default function ProfileSection() {
     <div>
       <h2 className="text-xl font-semibold text-white mb-4">PROFILE</h2>
       <p className="text-gray-300 mb-6">
-        I have currently accepted an offer to intern at Synchrony Financial as a mobile development intern for the spriing of 2026, but am still open to other opportunities at different times related to software engineering, product management, tech consulting, and more. If you think I am a good fit, please contact me at
+        I have currently accepted an offer to intern at Synchrony Financial as a mobile development intern for the spring of 2026, but am still open to other opportunities at different times related to software engineering, product management, tech consulting, and more. If you think I am a good fit, please contact me at
         <a href="mailto:jonahjtran@gmail.com" className="text-blue-400 hover:underline"> jonahjtran@gmail.com</a>.
       </p>
 

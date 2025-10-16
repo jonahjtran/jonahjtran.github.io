@@ -5,7 +5,7 @@ export default function WorkExperience() {
     const work = [
         {title: "Mobile Development Intern", date: "January 2026", company: "Synchrony Financial", image: synchrony, description: "Working as a mobile development intern at Synchrony's Emerging Technology Center at Reseearch Park. "},
 
-        {title: "Software Engineer Intern", date: "May 2025-August 2025", company: "MeaVana", image: meavana, description:"I worked as a full-stack developer, creating different study tools for the MeaVana platform. Notably, I created a pomodoro timer that integrated multiple tools and features such as integrated planners, music playesr, and timer settings to create an all in one study platform for students. I also created marketing technology, such as webscrapers to automate UIUC RSO contact retrieval, whihc sped up our outreach by near 45%. "},
+        {title: "Software Engineer Intern", date: "May 2025-August 2025", company: "MeaVana", image: meavana, description:"I worked as a full-stack developer, creating different study tools for the MeaVana platform. Notably, I created a pomodoro timer that integrated multiple tools and features such as integrated planners, music playesr, and timer settings to create an all in one study platform for students. I also created marketing technology, such as webscrapers to automate UIUC RSO contact retrieval, which sped up our outreach by near 45%. "},
     ]
 
     return (
