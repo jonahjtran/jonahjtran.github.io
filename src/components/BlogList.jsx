@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { posts } from "../data/posts";
 
 export default function BlogList() {
+    
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map((post) => (

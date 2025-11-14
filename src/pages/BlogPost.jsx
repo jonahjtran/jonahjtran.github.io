@@ -6,6 +6,7 @@ export default function BlogPost() {
     const post = posts.find((p) => p.slug === slug);
 
     const base = import.meta.env.BASE_URL || "/";
+    const paragraphs = (post?.content ?? "").split(/\n\s*\n/);
 
     if (!post) {
         return (
@@ -21,8 +22,12 @@ export default function BlogPost() {
             <Link to={`${base}#blog`} className="text-blue-400 hover:text-blue-300 text-sm">← Back to Blog</Link>
             <h1 className="text-3xl font-semibold text-white mt-4">{post.title}</h1>
             <p className="text-xs text-white/60 mt-1">{new Date(post.date).toLocaleDateString()}</p>
-            <article className="prose prose-invert mt-6 whitespace-pre-line">
-                {post.content}
+            <article className="prose prose-invert mt-6">
+                {paragraphs.map((para, idx) => (
+                    <p key={idx} className="my-2">
+                        {para}
+                    </p>
+                ))}
             </article>
         </div>
     );
