@@ -2,7 +2,7 @@ export const posts = [
   {
     slug: "recruiting-thoughts",
     title: "Standing Out in a Competitive Recruiting Environment",
-    date: "2025-01-10",
+    date: "2025-11-13",
     description:
       "How I changed my perspective on recruiting and led to success in the recruiting process.",
     content: `As I continue my current semester as a student, I want to talk about a class that steers away from some of the traditional courses I have taken so far. BADM 261, or the Technology and Management Seminar, is a course where we hear and learn from professionals across a wide range of industries. Through these weekly panels, we talk about a variety of topics, like introducing a new idea to a large company or breaking into our dream job as a current student. While each of these topics and discussions have provided me with key takeaways in the area of technology and management, a topic we discussed that I wanted to talk about today is how to stand out in the job market.\n
