@@ -1,25 +1,25 @@
 export default function Projects() {
     const projects = [
         {
-            title: "Basketball Stats Tracker",
+            title: "Jamtown (CUBE Consulting Client)",
             description:
-                "A web application that allows users to track their basketball stats and analyze their performance. While tracking a users stats, various heatmaps can be generated from data related to games, seasons, or specific players.",
-            tags: ["React", "Python", "Django", "Postgres", "REST API", "Matplotlib"],
+                "Built a RAG system over a Supabase vector store, improving artist-matching retrieval across 100+ artists. Engineered a semantic-search embedding pipeline with HuggingFace all-mpnet-base-v2 and the Gemini API for generation and ranking.",
+            tags: ["Python", "HuggingFace", "Gemini API", "Supabase", "RAG"],
+            links: [],
+        },
+        {
+            title: "Mental Health Tracker",
+            description:
+                "Exposed 23 versioned REST endpoints across 5 resource areas via a FastAPI backend with layered architecture (routes, services, repositories, schemas). Achieved 74% code coverage with 60+ automated tests; secured routes with JWT + Google OAuth and generated AI journal insights via Google GenAI API.",
+            tags: ["Python", "FastAPI", "SQLAlchemy", "PostgreSQL", "JWT", "Google OAuth"],
+            links: [{ label: "GitHub", href: "https://github.com/jonahjtran" }],
+        },
+        {
+            title: "Basketball Stat Tracker",
+            description:
+                "Built a full-stack analytics platform (Django REST + Next.js/React) with a 7-entity schema exposing 30+ API routes; renders Matplotlib shot-chart heatmaps in ~40 ms persisted to Supabase PostgreSQL.",
+            tags: ["Python", "Django REST", "Next.js", "React", "PostgreSQL", "Matplotlib"],
             links: [{ label: "GitHub", href: "https://github.com/jonahjtran/Basketball-Stat-Tracker" }],
-        },
-        {
-            title: "AI Financial Planning App",
-            description:
-                "I collaborated with in a team of 4 to create an AI-driven financial planner prototype in a 36 hour hackathon. We leveraged React for a modernized UI, while also integrating OAuth authenification for google authentificationa and connectiveity. Furthermore, we utilized Gemini's API to give AI-driven financial advice realted to a user's longterm goal. These insights were backed by financial bank data from Capital One's Nessi API, which were displayed to users using D3.js based visualizations to display spending patterns.",
-            tags: ["Javascipt", "React", "D3.js", "Gemini API", "Capital One's Nessi API", "OAuth"],
-            links: [{ label: "GitHub", href: "https://github.com/jonahjtran/Ekewaka" }],
-        },
-        {
-            title: "Element Combination Drag and Drop Game",
-            description:
-                "Created a drag and drop game that allows users to combine elements to create new elements. This was a group project with 3 other students. Utilizing React and supabase for the frontend and database respectively, we were able to create a competitive multiplayergame mode that allowed users accross multiple devices to race to create a certain object. Integrating Gemini's API, we were also able to give users the ability to create new elements by combining elements that didn't have a set result upon combination.",
-            tags: ["Javascript", "React", "Supabase", "Gemini API"],
-            links: [{ label: "GitHub", href: "https://github.com/jonahjtran/Elemental-Clash" }],
         },
     ];
 

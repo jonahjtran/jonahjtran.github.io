@@ -1,13 +1,12 @@
 export default function RelatedCoursework() {
     const courses = [
-        "Data Sructures and Algorithms",
+        "Data Structures & Algorithms (C++)",
+        "Database Systems (SQL, Neo4j, MongoDB)",
+        "Applied Machine Learning",
+        "Algorithms & Models of Computation",
+        "System Programming",
+        "Computer Architecture",
         "Linear Algebra",
-        "Probability and Statistics for Computer Science",
-        "Algorithms and Models of Computation",
-        "Fundaments of Computer Architecture",
-        "Intro to Computer Science II",
-        "Dicrete Structures",
-        "Management and Organizational Behavior"
     ];
 
     return (

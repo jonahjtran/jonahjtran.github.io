@@ -1,11 +1,18 @@
 import meavana from "../assets/meavana.png";
 import synchrony from "../assets/synchrony.png";
+import cube from "../assets/cube.png";
+import gtmshift from "../assets/gtmshift.png";
 
 export default function WorkExperience() {
     const work = [
-        {title: "Mobile Development Intern", date: "January 2026", company: "Synchrony Financial", image: synchrony, description: "Working as a mobile development intern at Synchrony's Emerging Technology Center at Reseearch Park. "},
+        {title: "Software Engineering Intern, Emerging Technology Center", date: "Jan 2026 - Present", company: "Synchrony Financial", image: synchrony, subteams: [
+            {name: "Synchrony Business Solutions (SBS) Team", description: "Built an MCP server with 136 passing tests at 85% coverage enabling an LLM to interpret 25+ economic and SEO data fields and generate plain-language insights for non-technical business users. Surfaced trends from large datasets by building interactive Sigma dashboards over Snowflake Marketplace data for the Business Solutions team."},
+            {name: "SyPI Team", description: "Developed features and reduced technical debt in SyPI, the Swift/UIKit in-app card-management plugin embedded in partner apps (Amazon, Dick's Sporting Goods) serving 70M+ active accounts. Built a UICatalog test harness for the SyPI plugin to streamline QA across multiple partner configurations."},
+        ]},
 
-        {title: "Software Engineer Intern", date: "May 2025-August 2025", company: "MeaVana", image: meavana, description:"I worked as a full-stack developer, creating different study tools for the MeaVana platform. Notably, I created a pomodoro timer that integrated multiple tools and features such as integrated planners, music playesr, and timer settings to create an all in one study platform for students. I also created marketing technology, such as webscrapers to automate UIUC RSO contact retrieval, which sped up our outreach by near 45%. "},
+        {title: "Technical Lead & Solutions Architect", date: "Jan 2026 - Present", company: "GTMShift (CUBE Consulting)", image: gtmshift, description: "Led a 7-person team delivering a custom CRM and member-intelligence dashboard that unifies enrichment, lead scoring, and outreach in a single interface. Built a contact-enrichment pipeline (Apollo AI) and a scoring algorithm to surface high-priority contacts; automated APIs, triggers, and messaging with Make on a Supabase/PostgreSQL backend. Architected an ICP-scoring member-intelligence system (FastAPI, Google Auth, Supabase), reviewing PRs, building API endpoints, and driving on-time delivery."},
+
+        {title: "Software Engineering Intern", date: "May 2025 - Aug 2025", company: "MeaVana", image: meavana, description:"Served 20,000+ monthly active users by building productivity tools with React and Node.js over a 12-week internship. Boosted outreach 45% by developing scrapers that retrieved contact info from 200+ UIUC student organizations."},
     ]
 
     return (
@@ -32,6 +39,16 @@ export default function WorkExperience() {
                             <p className="text-blue-400 font-medium">{item.company}</p>
                             {item.description && (
                                 <p className="text-sm text-white/70 mt-2">{item.description}</p>
+                            )}
+                            {item.subteams && (
+                                <div className="mt-3 space-y-3">
+                                    {item.subteams.map((sub) => (
+                                        <div key={sub.name}>
+                                            <p className="text-sm font-semibold text-white/90">{sub.name}</p>
+                                            <p className="text-sm text-white/70 mt-1">{sub.description}</p>
+                                        </div>
+                                    ))}
+                                </div>
                             )}
                         </div>
                     </li>

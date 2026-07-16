@@ -4,9 +4,10 @@ export default function SkillsSection() {
   const skills = [
     { name: "Python", level: 90 },
     { name: "JS/TS/React", level: 85 },
-    { name: "C/C++", level: 75 },
-    { name: "Java", level: 65 },
-    { name: "SQL", level: 70 },
+    { name: "C/C++", level: 80 },
+    { name: "SQL", level: 75 },
+    { name: "Java", level: 70 },
+    { name: "Swift", level: 65 },
   ];
 
   return (
