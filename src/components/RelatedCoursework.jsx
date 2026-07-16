@@ -10,9 +10,9 @@ export default function RelatedCoursework() {
     ];
 
     return (
-        <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
+        <div className="flex flex-wrap gap-2">
             {courses.map((skill) => (
-                <span key={skill} className="badge bg-slate-800/60 text-white">
+                <span key={skill} className="badge">
                     {skill}
                 </span>
             ))}

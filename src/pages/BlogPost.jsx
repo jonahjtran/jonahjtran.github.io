@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 import { posts } from "../data/posts";
 
 export default function BlogPost() {
@@ -11,20 +12,38 @@ export default function BlogPost() {
     if (!post) {
         return (
             <div className="mx-auto max-w-3xl px-6 py-10">
-                <p className="text-white">Post not found.</p>
-                <Link to={`${base}#blog`} className="text-blue-400 hover:text-blue-300 text-sm mt-4 inline-block">Back to Blog</Link>
+                <p>Post not found.</p>
+                <Link
+                    to={`${base}#blog`}
+                    className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
+                >
+                    <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+                    Back to Blog
+                </Link>
             </div>
         );
     }
 
     return (
         <div className="mx-auto max-w-3xl px-6 py-10">
-            <Link to={`${base}#blog`} className="text-blue-400 hover:text-blue-300 text-sm">← Back to Blog</Link>
-            <h1 className="text-3xl font-semibold text-white mt-4">{post.title}</h1>
-            <p className="text-xs text-white/60 mt-1">{new Date(post.date).toLocaleDateString()}</p>
-            <article className="prose prose-invert mt-6">
+            <Link
+                to={`${base}#blog`}
+                className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
+            >
+                <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+                Back to Blog
+            </Link>
+            <h1 className="mt-6 text-3xl sm:text-4xl font-semibold">{post.title}</h1>
+            <p className="mt-2 text-sm text-muted-foreground">
+                {new Date(post.date).toLocaleDateString(undefined, {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                })}
+            </p>
+            <article className="mt-8">
                 {paragraphs.map((para, idx) => (
-                    <p key={idx} className="my-2">
+                    <p key={idx} className="my-4 leading-relaxed text-muted-foreground">
                         {para}
                     </p>
                 ))}
@@ -32,5 +51,3 @@ export default function BlogPost() {
         </div>
     );
 }
-
-
